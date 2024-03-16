@@ -1,0 +1,901 @@
+
+:root {
+    --white: white;
+    --black: black;
+    --pink: #ff90e8;
+    --dim-grey: #78716c;
+    --white-smoke: #f4f4f0;
+    --yellow-dark: #ffc900;
+    --yellow: #f1f333;
+    --orange: #e2442f;
+    --teal: #23a094;
+    --purple: #90a8ed;
+    --red: #98282a;
+    --violet: #b23386;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mabry Pro","Mabry Pro Medium", sans-serif;
+
+}
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+a:hover{
+    text-decoration: underline;
+    transition: ease-in-out 31s;
+
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*************** Logo **************/
+
+.logo img{
+    width:100%;
+    height: auto;
+    background: var(--white); 
+    padding:1.5rem;
+}
+
+/***************** Navigation ***********************/
+.navBar{
+    border: 2px solid black;
+    position: sticky;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white);
+    z-index:1;
+     
+    
+}
+.navBar_links{
+    flex:1 1 80%;
+    /* padding: 1. 3rem; */
+    padding-left: 3rem;
+}
+.navBar_links ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+
+
+ .navBar_buttons{
+    white-space:nowrap;
+    border-left: 2px solid var(--black); 
+    display: flex;
+}
+
+.navBar_buttons button{
+    border: none;
+    padding:1.3rem 2rem ;
+    font: inherit;
+}
+
+.btn_login{
+  
+    background: var(--white);
+}
+
+.btn_StartSelling{
+    background:var(--black);
+    color: var(--white);
+    border-left: 2px solid black!important;
+    
+
+}
+
+.btn_login:hover{
+    background: var(--pink);
+
+}
+.btn_StartSelling:hover{
+    background: var(--pink);
+    color: var(--black);
+
+} 
+
+
+/*************** Section One **************/
+
+.sectionOne{
+    display: flex;    
+    border-bottom: 2px solid black;
+
+}
+
+.sectionOne_left{
+    background: var(--pink); 
+    border-right: 2px solid black;
+    display: flex;
+    flex:1 0 50%;
+    align-items: center;  
+    justify-content: center;  
+
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    flex:0 0 75%;
+    gap: 2rem;
+    margin: 10rem 0 ;
+}
+.heading{
+    font-family: "Mabry Pro medium";
+    font-size: 6rem;
+    font-weight:lighter;
+}
+.para{
+    font-size: 1.5rem;
+    line-height: 1.3;
+    letter-spacing: -.01em;
+    
+
+}
+.black_btn{
+    border: none;
+    background: var(--black);
+    align-self: flex-start;
+    color: var(--white);
+    padding: 1.5rem 5rem;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.black_btn:hover {
+    transform: translate(-5px ,-1px);
+    box-shadow: 6px 6px var(--pink),
+                6px 6px 0 2px black,
+                15px 15px var(--yellow-dark),
+                15px 15px 0 2px black;;
+    outline-offset: 2px;
+}
+
+.sectionOne_right{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: auto;
+    background: var(--yellow-dark);
+    flex: 1 1 50%;
+    padding-top: 5rem ;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    justify-content: space-around;
+    
+}
+.rightContainer{
+    position: relative;
+    width:100%;
+    height: 100%;
+    
+}
+.vegalia{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 580px;
+    /* height: 600px; */
+    object-fit: contain;
+} .img_g{
+    position: absolute;
+    width: 225px;
+    bottom: 40px;
+    left:55px;
+}
+.brush{
+    position: absolute;
+    width: 125px;
+    right: 68px;
+    top: 100px;
+}
+.btn_name{
+    border: 2px solid black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    font: inherit;
+    padding: .5rem 1rem;
+    gap: 12px;
+    cursor: pointer;
+}
+.btn_name:hover ,.grid_btn:hover{
+    transform: translate(-1px,-2px);
+    box-shadow: 3px 3px;
+}
+.btn_vegalia{
+    position: absolute;
+    bottom: 50px;
+    right: 45px;
+    
+}
+.sub_text{
+    font-size: 21px;
+    font-weight: 400;
+}
+
+
+
+/**************** Section Two  ****************/
+
+.sectionTwo{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 6.2rem;
+}
+.sectionTwo .para p{
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    font-size: 2.2rem;
+}
+.yellowSection{
+   position: relative;
+    background: var(--yellow-dark);
+    
+    width: 80rem;
+    height: 20rem;
+    margin: auto;
+    border-radius: 150px;
+    border: 2px solid black;
+}
+.innerYellowSection{
+    position: absolute;
+    top:2rem;
+    left: 2.7rem;
+    width: 75rem;
+    height: 15rem;
+    border: 2px solid black;
+    border-radius:150px ;
+}
+i{
+    font-size: 23px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.innerYellowSection h2{
+    position: relative;
+    font-weight:normal;
+    background: var(--yellow-dark);
+    display: inline;
+    padding: 0 1rem;
+}
+
+.innerYellowSection .arrowOne{
+    top: -.7rem;
+    left: 9.5rem;
+}
+
+.innerYellowSection h2:first-of-type{
+    position: absolute;
+    left: 10rem;
+    top: -1rem;
+}
+.innerYellowSection .arrowTwo{
+    top: -.7rem;
+    right:19.2rem;
+
+}
+.innerYellowSection h2:first-of-type::before{
+    content: url();
+}
+.innerYellowSection h2:nth-of-type(2){
+    position: absolute;
+    top: -1rem;
+    right: 10rem;;
+
+}
+.innerYellowSection h2:nth-of-type(3){
+    position: absolute;
+    bottom: -1rem;
+    right: 10rem;;
+
+}
+.innerYellowSection .arrowThree{
+    bottom: -.75rem;
+    right:9.5rem;
+
+}
+.innerYellowSection h2:last-of-type{
+    position: absolute;
+    bottom: -1rem;
+    left: 10rem;;
+
+}
+
+.innerYellowSection .arrowFour{
+    bottom: -.75rem;
+    left:25.3rem;
+
+}
+
+
+/*************** Section Three ************/
+
+.sectionThree{
+    display: grid;
+    background-color: #78716c;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    
+   
+}
+.sectionThree h2{
+    font-size: 46px;
+    font-weight: normal;
+}
+[class^="sectionThree_top"],[class^="sectionThree_bottom"] {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 3rem;
+}
+.sectionThree_top_left{
+    background: var(--violet);
+    border-right: 2px solid black;
+}
+.sectionThree_top_right{
+    background: var(--pink);
+    border-bottom: 2px solid black;
+}
+.sectionThree_bottom_left{
+    
+    position: relative;
+    background: var(--black);
+  
+}
+.sectionThree_bottom_right{
+  
+    position: relative;
+    background: var(--yellow-dark);
+    padding-top: 8rem;
+    padding-bottom: 6rem ;
+}
+.quote
+{
+    position: absolute;
+    top: 90px;
+    left: 55px;
+    background: var(--white-smoke);
+    padding: 2rem;
+    border: 2px solid black;
+    border-radius: 15px;
+
+    font-size: 21px;
+}
+
+
+
+.img_exciting{
+    position: absolute;
+    bottom: -4rem;
+    right: 2rem
+}
+
+/************* Section Four **************/
+.sectionFour{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 2rem;
+    gap: 2rem;
+    border-bottom: 2px solid black;
+}
+.sectionFour .heading{
+    font-size: 4rem;
+    font-weight: lighter;
+}
+.sectionFour p{
+ width: 50%;
+ text-align: center;   
+}
+
+.sectionFour a{
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+.sectionFour a::after{
+    content: url(images/arrow.svg);
+    padding: 1px;
+}
+
+
+
+/****************** Section Five  *****************/
+
+.sectionFive{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    
+}
+.sectionFive_left{
+    background: var(--teal);
+    padding-right: 7rem;
+    border-right: 2px solid black;
+}
+.sectionFive_right{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 7rem;
+    
+}
+.sectionFive_right ul{
+    list-style: url(images/arrow.svg);
+}
+
+.sectionFive_right li{
+    padding: 0.5rem;
+    margin-left: 2rem;
+    font-size: 18px;
+  
+    
+}
+.sub_heading{
+    font-size: 2.9rem;
+    font-weight: normal;
+}
+
+
+
+
+/**************** Section Six ***********/
+
+.sectionSix{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--pink);
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+    border-top:2px solid black ;
+    border-bottom: 2px solid black;
+    
+}
+.sectionSix_left{
+   padding-left:  5rem;
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+}
+.text{
+   font-size: 32px;
+  
+}
+
+.sectionSix_right{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+.img_max{
+    width: 80vh;
+    
+
+}
+.img_write{
+    position: absolute;
+    left: 3rem;
+    bottom: 2rem;
+    width: 180px;
+}
+
+.btn_max{
+    position: absolute;
+    bottom: 4rem;
+    right: 2rem;
+}
+
+
+/* Section Seven */
+
+
+.sectionSeven{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.sectionSeven_left{
+    background: var(--black);
+    padding: 7rem;
+
+    border-right: 2px solid black;
+}
+.sectionSeven_right{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 7rem;
+}
+/*********** Section Eight ********/
+
+.sectionEight{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--teal);
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+    border-top:2px solid black ;
+    border-bottom: 2px solid black;
+    
+}
+.sectionEight_left{
+   padding-left:  5rem;
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+}
+
+.sectionEight_right{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   padding: 3rem;
+}
+.img_trend{
+    width:75vh;
+}
+.img_book{
+    position: absolute;
+    left: 0rem;
+    bottom: 2rem;
+    width: 230px;
+}
+.img_free{
+    position: absolute;
+    right:2rem;
+    top: 5rem;
+}
+
+.btn_trend{
+    position: absolute;
+    bottom: 6rem;
+    right: 4rem;
+}
+
+/****************** Section Nine **************/
+
+
+.sectionNine{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+.sectionNine_left{
+    background: var(--yellow-dark);
+    padding: 7rem;
+
+    border-right: 2px solid black;
+}
+.sectionNine_right{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 7rem;
+}
+
+/************* Section Ten *****************/
+
+.sectionTen_top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem;
+}
+
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 3rem;
+}
+.grid{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: #f1f333;
+    padding: 2rem;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.grid img{
+    width: 80px;
+
+}
+.grid_title{
+    font-size: 32px;
+    padding: 1rem 0;
+}
+.grid_text{
+    text-align: left;
+    font-size: 21px;
+    padding-bottom: 1rem ;
+}
+
+.btn_container{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 1rem ;
+    
+   
+}
+.grid_btn{
+    background: var(--white);
+    border-radius: 50px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.one{
+    background: var(--teal);
+}
+.two{
+    background: var(--orange);
+}
+.three{
+    background: var(--purple);
+}
+.four{
+    background: var(--yellow);
+}
+.five{
+    background: var(--pink);
+}
+.six{
+    background: var(--yellow-dark);
+}
+
+
+
+
+/****************** Section Eleven *************/
+
+
+.sectionEleven{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--pink);
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+    border-top:2px solid black ;
+    border-bottom: 2px solid black;
+    
+}
+.sectionEleven_left{
+   padding-left:  5rem;
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+}
+
+.sectionEleven_right{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   padding: 3rem;
+}
+.img_steph{
+    width:75vh;
+}
+.img_dollar{
+    position: absolute;
+    top: 3rem;
+    left: 10rem;
+    
+}
+.img_howto{
+    position: absolute;
+    right:3rem;
+    bottom: 1rem;
+}
+
+.btn_steph{
+    position: absolute;
+    bottom: 5rem;
+    left: 4rem;
+}
+
+/************************* section Twelve **********************/
+.section12_top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem;
+    gap: 2rem;
+    text-align: center;
+}
+.section12_top h1{
+    font-size: 10rem;
+    font-weight: normal;
+}
+.section12_top p{
+    font-size: 32px;
+}
+
+
+.g1{
+    position: absolute;
+    top: -8rem;
+    left: 15rem;
+}
+.g2{
+    position: absolute;
+    top: 5rem;
+    left: -3rem;
+}
+.g3{
+    position: absolute;
+    bottom: 0;
+    left: 4rem;
+}
+.g4{
+    position: absolute;
+    top: 8rem;
+    right: 11rem;
+}
+.g5{
+    position: absolute;
+    bottom: 5rem;
+    right: -3rem ;
+}
+
+/********************** Section Thirteen **************/
+
+.section13{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    padding: 8rem;
+    background: var(--pink);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.section13 p{
+    font-size: 64px;
+}
+.section13 button{
+    align-self: center;
+}
+
+/************* Footer ***************/
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    background: var(--black);
+    color: var(--white);
+    padding:  2rem;
+}
+.footer_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 50%;
+    padding:5rem 3rem;
+}
+.footer_text{
+    font-size: 38px;
+    padding-bottom: 2rem;
+}
+.email_button_align{
+    margin-bottom: 5rem;
+}
+input{
+    font: inherit;
+    color: var(--black);
+    width: 35rem;
+    padding: 1.4rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    position: relative;
+
+}
+.footer_arrow_btn{
+    position: absolute;
+    border: none;
+    background: var(--pink);
+    padding: 1.34rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 2px solid #000;
+}
+.text_icon_align{
+    display: flex;
+    align-items: center;
+    padding-top: 5rem;
+    
+}
+.footer_right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-basis: 50%;
+    padding: 0 5rem;
+    /* gap: 10rem; */
+}
+.list_align{
+    display: flex;
+    justify-content: flex-end;
+    gap: 8rem;
+}
+ul{
+    
+    list-style: none;
+    
+}
+li{
+    padding: 0.5rem;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 5rem;
+}
+
+.social button{
+    border: none;
+    background: none;
+    padding: 0 2rem;
+}
+.fa-brands{
+    font-size: 28px;
+    color: var(--white-smoke);
+}
+
+
+
+
+
+
+
+
+
+
+
